@@ -328,12 +328,13 @@ section .content__flex aside .content__aside__list__item::after {
 .scroll {
   display: flex;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .swiper-wrapper {
   transition-timing-function: linear;
   align-items: center;
-  margin-left: 10px;
+  width: 100vw;
 }
 
 .swiper-slide {
@@ -346,6 +347,36 @@ footer {
   flex-direction: column;
   gap: 10px;
   margin-bottom: 10rem;
+}
+
+@media (max-width: 710px) {
+  .nav__buttons {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .nav__titles {
+    flex-direction: column;
+  }
+  header h1 {
+    padding-left: 15px;
+  }
+  .content__flex {
+    flex-direction: column;
+  }
+  aside {
+    margin-top: 0 !important;
+  }
+  .content__aside__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+  .content__aside__list .content__aside__list__item {
+    margin-top: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
