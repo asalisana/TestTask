@@ -1,3 +1,3 @@
 # TestTask for РУС2
 
-Верстка c использованием html css js и библиотеки Swiper Slider 
+Верстка c использованием HTML/CSS, (препоцессор SCSS), JS и библиотеки Swiper Slider 
